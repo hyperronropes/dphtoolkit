@@ -365,27 +365,6 @@
             background: var(--accent-hover-color); transform: translateY(-4px) scale(1.05);
             box-shadow: 0 8px 25px var(--accent-glow-strong);
         }
-
-        .trust-qualities-container { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px; text-align: center;
-        }
-        .quality-item {
-            background-color: transparent; padding: 25px 15px;
-            opacity:0; animation: scaleUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-        }
-         .quality-item:nth-child(1) { animation-delay: 0.4s; }
-         .quality-item:nth-child(2) { animation-delay: 0.55s; }
-         .quality-item:nth-child(3) { animation-delay: 0.7s; }
-
-        .quality-icon { 
-            font-size: 3.2em; color: var(--accent-color); margin-bottom: 25px; display: inline-block;
-            transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), filter 0.3s ease;
-             filter: drop-shadow(0 0 8px var(--accent-glow-color));
-        }
-        .quality-item:hover .quality-icon { transform: translateY(-10px) scale(1.25) rotate(8deg); filter: drop-shadow(0 0 15px var(--accent-glow-strong));}
-        .quality-item h3 { font-size: 1.4em; color: var(--text-color); margin-bottom: 12px; font-weight: 600; }
-        .quality-item p { color: var(--text-secondary-color); font-size: 0.9em; }
         
         #download.final-cta { 
             background: linear-gradient(to bottom, var(--secondary-bg-color), var(--primary-bg-color)); 
@@ -442,7 +421,7 @@
             .nav-cta { margin-left: auto; padding: 10px 22px; font-size: 0.85em;}
 
             section { padding: 70px 0; }
-            .features-grid, .trust-qualities-container { gap: 30px; }
+            .features-grid { gap: 30px; }
         }
 
     </style>
@@ -458,7 +437,7 @@
             </a>
             <ul>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#showcase">Showcase</a></li>
+                <!-- <li><a href="#showcase">Showcase</a></li> --> <!-- Showcase link removed -->
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="https://discord.gg/ctUukcRqD2" target="_blank">Discord</a>
                 <li><a href="#download" class="nav-cta">Get Toolkit</a></li>
@@ -506,30 +485,7 @@
             </div>
         </section>
 
-        <section id="showcase" class="section-animated" style="background-color: var(--secondary-bg-color);">
-            <div class="container">
-                 <div class="section-heading">
-                    <h2>Visualize the Evolution</h2>
-                    <p>Witness firsthand how DPH Toolkit elevates your Unity Game Modding projects from tedious tasks to creative endeavors.</p>
-                </div>
-                <div class="detailed-item">
-                    <div class="detailed-image-placeholder">[Immersive GIF/Video: DPH Toolkit fluidly navigating and editing a complex game asset, highlighting UI elements]</div>
-                    <div class="detailed-content">
-                        <h3>Standalone Install</h3>
-                        <p>Our Toolkit is extremely easy to install.</p>
-                        <a href="#your-interface-deep-dive" class="learn-more">Explore the Interface</a>
-                    </div>
-                </div>
-                <div class="detailed-item reverse">
-                     <div class="detailed-image-placeholder">[Immersive GIF/Video: The batch scripting tool executing a complex multi-file operation with visual feedback for game assets]</div>
-                    <div class="detailed-content">
-                        <h3>True Automation Power</h3>
-                        <p>Leave manual drudgery behind. Leverage the advanced scripting engine or our visual batch processors for complex, multi-file operations. Efficiency in your Unity Game Modding projects is no longer a goal, it's a guarantee.</p>
-                        <a href="#your-automation-features" class="learn-more">Master Automation</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- SHOWCASE SECTION REMOVED -->
         
         <section id="pricing" class="section-animated">
             <div class="container">
@@ -571,33 +527,10 @@
             </div>
         </section>
 
-        <section class="trust-qualities-section section-animated" style="background-color: var(--secondary-bg-color);">
-            <div class="container">
-                 <div class="section-heading">
-                    <h2>Engineered for Excellence in Unity Game Modding</h2>
-                    <p>DPH Toolkit is built on principles of innovation, performance, and strong community focus for all your Unity Game Modding needs.</p>
-                </div>
-                <div class="trust-qualities-container">
-                    <div class="quality-item">
-                        <div class="quality-icon">💡</div>
-                        <h3>Innovative Core</h3>
-                        <p>Cutting-edge algorithms and a forward-thinking design philosophy for effective Unity Game Modding.</p>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-icon">📈</div>
-                        <h3>Relentless Evolution</h3>
-                        <p>Continuously updated with new features based on user needs and tech advancements in Unity Game Modding.</p>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-icon">🫂</div>
-                        <h3>Community Focused</h3>
-                        <p>Active Discord server for support, feedback, and collaboration on all things DPH Toolkit and Unity Game Modding.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- TRUST QUALITIES SECTION REMOVED -->
 
-        <section id="download" class="final-cta section-animated"> 
+        <section id="download" class="final-cta section-animated" style="background-color: var(--secondary-bg-color);"> 
+            <!-- Adjusted background color as the previous section with this color was removed -->
             <div class="container">
                 <div class="section-heading">
                     <h2 style="font-size: clamp(2.8em, 6vw, 4em); color: var(--text-color);">Get Started with DPH Toolkit</h2>
